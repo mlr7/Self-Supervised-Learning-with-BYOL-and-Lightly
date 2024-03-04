@@ -1,6 +1,8 @@
 # **Self-Supervised-Learning-with-BYOL**
 Studying self-supervised learning (SSL) for computer vision and the BYOL (Bootstrap Your Own Latent) approach to SSL.
 
+![](img/byol_perf.png)
+
 ## **Introduction**
 
 **Self-Supervised Learning with BYOL (Bootstrap Your Own Latent)**
@@ -46,13 +48,15 @@ It is on ongoing research question as to the best practices for transferring sel
 
 Self-supervised learning has the continuing potential to unlock more scalable and efficient ways to learn from data. Self-supervised learning development continues to be an area of active research, with new methods and improvements being proposed regularly.
 
-In this notebook implement the BYOL approach to self-supervised learning learning the Lightly Python library (https://pypi.org/project/lightly/). 
+In this notebook we implement the BYOL approach to self-supervised learning learning the Lightly Python library (https://pypi.org/project/lightly/). 
 
 ## **BYOL: Bootstrap Your Own Latent**
 
 **BYOL (Bootstrap Your Own Latent)** is a novel approach to **self-supervised learning** introduced in a paper by Jean-Bastien Grill, Florian Strub, Florent Altché, Corentin Tallec, Pierre H. Richemond, Elena Buchatskaya, Carl Doersch, Bernardo Avila Pires, Zhaohan Daniel Guo, Mohammad Gheshlaghi Azar, Bilal Piot, Koray Kavukcuoglu, Rémi Munos, and Michal Valko. The main idea behind BYOL is to train a deep neural network to learn powerful representations without relying on negative samples, which is a common requirement in many other self-supervised learning frameworks.
 
 Mechanics of BYOL:
+
+![](img/byol_architecture.png)
 
 **Architecture**: BYOL utilizes a dual-network architecture consisting of a target network and an online network. Both networks have the same architecture but do not share weights. The online network is updated through backpropagation during training, while the target network's weights are updated as a slow-moving average of the online network's weights. This means the target network evolves more smoothly over time.
 
