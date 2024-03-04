@@ -1,4 +1,4 @@
-# **Self-Supervised-Learning-with-BYOL**
+# **Self-Supervised-Learning-with-BYOL-and-Lightly**
 Studying self-supervised learning (SSL) for computer vision and the BYOL (Bootstrap Your Own Latent) approach to SSL.
 
 ![](img/byol_perf.png)
